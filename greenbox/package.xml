@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>greenbox</name>
+  <version>0.0.0</version>
+  <description>The greenbox package</description>
+  <maintainer email="tanmayg@iitk.ac.in">tanmay</maintainer>
+  <license>TODO</license>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+ <depend>cv_bridge</depend>
+  <depend>message_generation</depend>
+  <depend>message_runtime</depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

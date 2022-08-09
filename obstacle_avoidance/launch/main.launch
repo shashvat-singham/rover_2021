@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find obstacle_avoidance)/launch/default.launch"/>
+    <node pkg="obstacle_avoidance" type="reachdest" name="reachdest"/>
+    <node pkg="obstacle_avoidance" type="velcontroller" name="velcontroller"/>
+    <node pkg="obstacle_avoidance" type="avoidance_node" name="avoidance_node"/>
+    <rosparam file="$(find obstacle_avoidance)/config/params.yaml"/>
+
+</launch>

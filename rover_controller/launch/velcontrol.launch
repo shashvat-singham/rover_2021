@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+    <include file = "$(find rover_controller)/launch/default.launch"/>
+    <node pkg="rover_controller" type="gps_node" name="gps_node"/>
+    <node pkg="rover_controller" type="reachdest" name="reachdest"/>
+    <node pkg="rover_controller" type="velcontroller" name="velcontroller"/>
+    <rosparam file="$(find rover_controller)/config/params.yaml"/>
+
+
+</launch>

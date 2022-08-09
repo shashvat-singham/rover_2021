@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+	<node pkg="rosbag" type="play" name="player" args="$(find greenbox)/bag/image.bag --loop"/>
+        
+	<node name="centre_detector_node" pkg="greenbox" type="centre_detector_node"/>
+
+</launch>
